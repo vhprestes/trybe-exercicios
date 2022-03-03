@@ -1,0 +1,15 @@
+
+.estiloh1 h1, p{
+    text-align: center;
+}
+
+ol:hover {
+    background-color: blueviolet;
+       
+}
+
+ol:active {
+    color: aliceblue;
+    font-family: monospace;
+
+}
