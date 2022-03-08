@@ -62,29 +62,26 @@
 
 // exercicio 6
 
-let peca = "REI";
-switch (peca) {
-    case peca.toLocaleLowerCase("bispo"):
+let peca = "cavALO";
+switch( (peca).toLowerCase()) {
+    case "bispo":
     console.log("movimentos diagonais");
     break;
-    case peca.toLocaleLowerCase("peao"):
-        console.log("movimentos para frente");
+    case "peao":
+        console.log("movimentos pra frente");
         break;
-        case peca.toLocaleLowerCase("torre"):
-            console.log("movimentos retos");
+        case "torre":
+            console.log("movimentos em retas");
             break;
-            case peca.toLocaleLowerCase("cavalo"):
+            case "cavalo":
                 console.log("movimentos em L");
                 break;
-                case peca.toLocaleLowerCase("rei"):
-                    console.log("movimentos em todas as direções");
+                case "rei":
+                    console.log("movimentos em todas direções");
                     break;
-                    case peca.toLocaleLowerCase("rainha"):
+                    case "rainha":
                         console.log("movimentos em todas direções");
                         break;
-                        default:
-                        console.log("error")
-
-
-
+                        default: console.log("error"); 
 }
+
