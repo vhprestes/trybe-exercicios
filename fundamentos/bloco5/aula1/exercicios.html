@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Exercício 5.1</title>
-    
+
     <style>
-      main, section {
+      main,
+      section {
         border-color: black;
         border-style: solid;
       }
@@ -31,18 +32,18 @@
     </style>
   </head>
   <body>
-    <header> 
-      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
-    </header>    
-    <main class="main-content">
-      <section class="center-content">
+    <header>
+      <h1 class="title">Exercício 5.1 - JavaEscripito</h1>
+    </header>
+    <main class="main-content" id="myDiv">
+      <section class="center-content" id="myDiv2>
         <p>Texto padrão do nosso site</p>
-        <p id="p">-----</p>
+        <p class="paragrafo">-----</p>
         <p>Trybe</p>
       </section>
     </main>
     <script>
-        /*
+      /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById() no texto e sim realizando o exercício)
         - document.getElementsByClassName()
@@ -55,23 +56,17 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-// 1
-function mudartextop(texto) {
-document.getElementById('p').innerText= "Carreira estável, familia a caminho";
-return mudartextop(texto);
-    
-}
+      // 1
+      document.getElementsByClassName('paragrafo').innerText = "Bom salário, emprego bom, familia a caminho com a marcy";
+
+      //2
+        // document.getElementsByTagName("main-content").style.backgroundColor = "green";
+      
+        document.getElementById("myDiv").style.backgroundColor = "lightblue";
+        document.getElementsByTagName("center-content").style.backgroundColor = "green";
 
 
-document.getElementById('p').innerText = "Bom salário, emprego bom, familia a caminho com a marcy";
-document.getElementsByClassName('main-content').style.background = 'color (blue)';
-
-//2
-function changeBackground(color) {
-   document.getElementsByClassName('main-content').style.backgroundColor = rgb (76,164,109);
-}
-
-
+        
     </script>
   </body>
 </html>
