@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<form action="paginaEnvio.html" method="get" class="speaker-form">
+
+<body>
+<header><h1> Header da Página</header></h1>
+<fieldset class="outbox">
+    <div id="namemail">
+<label for="nome">Nome:  </label>
+<input type="text" maxlength="40" minlenght="10" >
+<br>
+<label for="email">E-mail</label>
+<input type="email" maxlength="50" minlenght="10"></div>
+<br>
+
+
+<span id="options">
+<input type="radio" name="options" id="tipo-1" value="opt1">
+<label for="tipo-1">Cidade</label>
+<input type="radio" name="options" id="tipo-1" value="opt2">
+<label for="tipo-1">Campo</label>
+
+<input type="radio" name="options" id="tipo-1" value="opt3">
+<label for="tipo-1">Praia</label>
+
+<input type="radio" name="options" id="tipo-1" value="opt4">
+<label for="tipo-1">Montanhas</label>
+</span>
+<br>
+
+
+<!-- <h3>Espaço para digitar a resposta:</h3> -->
+<br>
+<div id="boxtext"><label for="resumo">Espaço para digitar a resposta:</label></div>
+<textarea name="resumo" id="resumo" cols="40" rows="10" maxlength="500"></textarea>
+<br>
+<label for="data">Data:  </label>
+<input type="date" placeholder=" dd/mm/aaaa " >
+
+
+<br>
+<span id="pisao">
+<input type="checkbox"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+<br>
+<input type="checkbox"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros
+</span>
+</div>
+<div id="outerbutton">
+<button type="submit">Enviar</button>
+<button type="reset" id="resetar">Apagar</button> </div>
+</fieldset>
+
+<script src="script.js"></script>
+</body>
+</html>

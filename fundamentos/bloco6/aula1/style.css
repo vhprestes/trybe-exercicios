@@ -1,0 +1,39 @@
+.outbox {
+  border: 2px solid;
+  padding: 20px;
+  max-width: 35%;
+  min-width: 30%;
+}
+
+#namemail {
+  text-align: left;
+  font-weight: 400;
+  color: gray;
+  font-size: 20px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+}
+
+#options {
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+}
+
+#pisao {
+    font-size: 10px;
+}
+
+#boxtext {
+    padding-bottom: 3px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
