@@ -68,15 +68,15 @@ const books = [
 // }
 
  
-// function smallerName() {
-//     let nameBook;
-//     books.forEach((book) => {
-//      if (!nameBook || book.name.length < nameBook.length) {
-//          nameBook = book.name;
-//      }
-//          })
-//          return nameBook;
-//         }
+function smallerName() {
+    let nameBook;
+    books.forEach((book) => {
+     if (!nameBook || book.name.length < nameBook.length) {
+         nameBook = book.name;
+     }
+         })
+         return nameBook;
+        }
 
 // function smallerName() {
 //     let nameBook;
@@ -89,22 +89,39 @@ const books = [
 //   }
 
 
-  const expectedResult = {
-    author: {
-      birthYear: 1948,
-      name: 'George R. R. Martin',
-    },
-    genre: 'Fantasia',
-    id: 1,
-    name: 'As Crônicas de Gelo e Fogo',
-    releaseYear: 1991,
+  // const expectedResult = {
+  //   author: {
+  //     birthYear: 1948,
+  //     name: 'George R. R. Martin',
+  //   },
+  //   genre: 'Fantasia',
+  //   id: 1,
+  //   name: 'As Crônicas de Gelo e Fogo',
+  //   releaseYear: 1991,
+  // };
+  
+  // function getNamedBook() {
+  //   // escreva seu código aqui
+  //   books.forEach((vinte6) => {
+  //       if (books.length === 26) {
+  //           return vinte6
+  //       }
+  //   })
+  // }
+
+  const employeeGenerator = (fullName) => {
+    const email = fullName.toLowerCase().split(' ').join('_');
+    return { `NomeCompleto`, email: `${email}@trybe.com` };
   };
   
-  function getNamedBook() {
-    // escreva seu código aqui
-    books.forEach((vinte6) => {
-        if (books.length === 26) {
-            return vinte6
-        }
-    })
-  }
+  
+  const newEmployees = (callback) => {
+    const employees = {
+      id1: callback('Pedro Guerra'),
+      id2: callback('Luiza Drumond'),
+      id3: callback('Carla Paiva'),
+    };
+    return employees;
+  };
+  
+  console.log(newEmployees(employeeGenerator));
