@@ -63,19 +63,42 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-// 1 - Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
-
-const expectedResult = [
-    'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-    'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-    'Fundação - Ficção Científica - Isaac Asimov',
-    'Duna - Ficção Científica - Frank Herbert',
-    'A Coisa - Terror - Stephen King',
-    'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
+  const expectedResult = [
+    { 
+      id: 1,
+      name: 'As Crônicas de Gelo e Fogo',
+      genre: 'Fantasia',
+      author: { name: 'George R. R. Martin', birthYear: 1948 },
+      releaseYear: 1991
+    },
+    {
+      id: 2,
+      name: 'O Senhor dos Anéis',
+      genre: 'Fantasia',
+      author: { name: 'J. R. R. Tolkien', birthYear: 1892 },
+      releaseYear: 1954
+    },
+    {
+      id: 3,
+      name: 'Fundação',
+      genre: 'Ficção Científica',
+      author: { name: 'Isaac Asimov', birthYear: 1920 },
+      releaseYear: 1951
+    },
+    {
+      id: 4,
+      name: 'Duna',
+      genre: 'Ficção Científica',
+      author: { name: 'Frank Herbert', birthYear: 1920 },
+      releaseYear: 1965
+    }
   ];
   
-  function formatedBookNames() {
-      let manipula = books.map((livro)=> `${livro.name} - ${livro.genre} - ${livro.author.name}` )
-      console.log(manipula);
-    }
-      formatedBookNames();
+  function fantasyOrScienceFiction() {
+const fic = books.filter((sify) => sify.genre === 'Ficção Científica');
+const fan = books.filter((fantasy) => fantasy.genre === 'Fantasia');
+const fanfic = Array.prototype.concat(fic, fan)
+
+console.log(fanfic);
+  }
+  fantasyOrScienceFiction()

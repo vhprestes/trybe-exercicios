@@ -62,20 +62,18 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
-
-// 1 - Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
-
-const expectedResult = [
-    'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-    'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-    'Fundação - Ficção Científica - Isaac Asimov',
-    'Duna - Ficção Científica - Frank Herbert',
-    'A Coisa - Terror - Stephen King',
-    'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
+  const expectedResult = [
+    'Frank Herbert',
+    'George R. R. Martin',
+    'Isaac Asimov',
+    'J. R. R. Tolkien',
   ];
   
-  function formatedBookNames() {
-      let manipula = books.map((livro)=> `${livro.name} - ${livro.genre} - ${livro.author.name}` )
-      console.log(manipula);
-    }
-      formatedBookNames();
+  function fantasyOrScienceFictionAuthors() {
+    // escreva seu código aqui
+  
+const generos = ['Ficção Científica', 'Fantasia']
+const imprimirautores = books.filter((book) => generos.includes(book.genre)).map((book) => book.author.name).sort();
+console.log(imprimirautores);
+}
+fantasyOrScienceFictionAuthors()
