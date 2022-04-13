@@ -67,7 +67,7 @@ const books = [
 
 function reduceNames() {
 //   escreva seu código aqui
-  const autores = books.reduce((acc, callback) => `${acc + callback.author.name}` + ' ' , ' ')
+  const autores = books.reduce((acc, callback) => `${acc + callback.author.name}` + ', ' , '') 
   console.log(autores);
   }
   reduceNames()
